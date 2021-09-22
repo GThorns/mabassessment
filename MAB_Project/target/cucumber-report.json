@@ -1,0 +1,81 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6055826100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ContactUsSteps.java:19"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Fill all the details in Request a call back section",
+        "description": "",
+        "id": "mab-contact-page;fill-all-the-details-in-request-a-call-back-section",
+        "after": [
+          {
+            "result": {
+              "duration": 1231546900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ContactUsSteps.java:43"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 59080545400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User open MAB webpage",
+            "match": {
+              "location": "ContactUsSteps.java:25"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 132821000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User Verifies they see request a call back",
+            "match": {
+              "location": "ContactUsSteps.java:29"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 964020000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Enter Personal Details",
+            "match": {
+              "location": "ContactUsSteps.java:33"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "MAB Contact Page",
+    "description": "",
+    "id": "mab-contact-page",
+    "keyword": "Feature",
+    "uri": "src\\test\\resources\\features\\MAB_Contact_Us.feature",
+    "tags": []
+  }
+]

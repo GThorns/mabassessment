@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-09-22T10:29:22 BST" name="Default suite" finished-at="2021-09-22T10:29:24 BST" duration-ms="2192">
+    <groups>
+    </groups>
+    <test started-at="2021-09-22T10:29:22 BST" name="Default test" finished-at="2021-09-22T10:29:24 BST" duration-ms="2192">
+      <class name="com.restassured.api.PutData">
+        <test-method signature="test2()[pri:0, instance:com.restassured.api.PutData@49c386c8]" started-at="2021-09-22T10:29:22 BST" name="test2" finished-at="2021-09-22T10:29:24 BST" duration-ms="2140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- com.restassured.api.PutData -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
