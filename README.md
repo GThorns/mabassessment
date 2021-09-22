@@ -1,5 +1,5 @@
 # mabassessment
-- To run section 1 (MAB contact us) please right click and run the TestRunner.java in JUnit 
+- To run section 1 (MAB contact us) please right click and run the TestRunner.java in JUnit (In Eclipse)
 Found in /src/test/java/com/tech/selenium/tests/TestRunner.java
 
 - To run section 2 (API Test) please select the test you wish to run, and right click, click run as and run in TestNG.
