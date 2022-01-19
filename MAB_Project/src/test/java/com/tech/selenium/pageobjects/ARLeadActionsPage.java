@@ -15,7 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class ARLeadActionsPage {
 
     private WebDriver _driver = null;
-
+//XPATHS ARE IN ORDER OF USAGE AND ARE REUSABLE ACROSS THE PROJECT 
     @FindBy(name = "q")
     WebElement _searchBox;
 
