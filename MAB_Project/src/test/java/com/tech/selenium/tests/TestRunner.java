@@ -5,9 +5,10 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 
+
 @RunWith(Cucumber.class)
 @CucumberOptions(features = 
-		{"src/test/resources/features/MAB_Contact_Us.feature",},
+		{"src/test/resources/features/AR_CreateALead.feature",},
         glue = {"com.tech.selenium.stepdefinitions"},
         plugin = {"json:target/cucumber-report.json","html:target/cucumber-html"})
 public class TestRunner {
