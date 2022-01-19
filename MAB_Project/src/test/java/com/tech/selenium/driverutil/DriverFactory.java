@@ -10,6 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
 
+
 import java.util.concurrent.TimeUnit;
 
 
@@ -18,7 +19,7 @@ public class DriverFactory {
     public static WebDriver getBrowser() {
 
         WebDriver _driver = null;
-        String _browserName = System.getProperty("browser", DriverType.FIREFOX.toString()).toUpperCase();
+        String _browserName = System.getProperty("browser", DriverType.CHROME.toString()).toUpperCase();
         DriverType _driverType = DriverType.valueOf(_browserName);
 
         switch (_driverType) {
@@ -51,4 +52,6 @@ public class DriverFactory {
         _driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         return _driver;
     }
+    
+ 
 }

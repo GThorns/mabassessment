@@ -1,8 +1,6 @@
 package com.restassured.api;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
-
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
