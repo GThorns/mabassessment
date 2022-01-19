@@ -16,7 +16,7 @@ public class ARLeadActionsSteps implements En {
     public ARLeadActionsSteps() {
 
         Before((Scenario scenario) -> {
-            driver = DriverFactory.getBrowser(); //you can change browser, currently bug in ChromeDriver versions. 
+            driver = DriverFactory.getBrowser(); //you can change browser, currently bug in ChromeDriver versions 
             ARLeadActionsPage = new ARLeadActionsPage(driver);
      
         });
