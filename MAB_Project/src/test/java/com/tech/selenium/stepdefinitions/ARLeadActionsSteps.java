@@ -38,9 +38,10 @@ public class ARLeadActionsSteps implements En {
         	ARLeadActionsPage.enterLeadDetailsForm();
         });
             
-        And("^I submit$", () -> {
+        When("^I submit$", () -> {
         	ARLeadActionsPage.submit();
         });
+        
             
         Then("^The success toast message appears$", () -> {
         	ARLeadActionsPage.successToastMessage();
