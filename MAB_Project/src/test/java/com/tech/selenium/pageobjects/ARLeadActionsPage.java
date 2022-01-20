@@ -83,6 +83,11 @@ public class ARLeadActionsPage {
     @FindBy(xpath="//button[contains(text(),'Submit')]")
     public WebElement submitButton;
     
+    @FindBy(xpath="//button[contains(text(),'Submit')]")
+    public WebElement Spinner;
+    
+    
+    
 
     public ARLeadActionsPage(WebDriver driver) {
         this._driver = driver;
@@ -127,9 +132,9 @@ public class ARLeadActionsPage {
     	leadSource.click();
     	leadSource.sendKeys("Lead Source");
 
-    	allocatedAdviser.click();
-    	allocatedAdviser.sendKeys("");
 
+    	Select allocatedAdviser =new Select(_driver.findElement(By.id("allocatedAdviser")));
+    	allocatedAdviser.selectByIndex(1);
 
     	Select leadTitle =new Select(_driver.findElement(By.xpath("//body/app-root[1]/app-default-route[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/div[2]/app-direct-lead-capture[1]/div[1]/div[1]/div[1]/form[1]/kal-card[2]/div[1]/div[1]/app-customer-list[1]/form[1]/div[1]/app-customer[1]/form[1]/div[1]/div[1]/select[1]")));
     	leadTitle.selectByIndex(1);
@@ -164,15 +169,19 @@ public class ARLeadActionsPage {
     
     public void submit() throws InterruptedException{
     	submitButton.click();
-    
+        Thread.sleep(2500);
     }
+    
+   
 
 	public void successToastMessage() throws InterruptedException {
-		  String nameStatus = new org.openqa.selenium.support.ui.WebDriverWait(_driver, 120).until(ExpectedConditions.elementToBeClickable(By.xpath("//app-page-header/mab-message[1]/div[1]/div[1]/div[1]/div[1]/kal-message-box[1]/div[1]"))).getText();
+		  String nameStatus = new org.openqa.selenium.support.ui.WebDriverWait(_driver, 120).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//app-page-header/mab-message[1]/div[1]/div[1]/div[1]/div[1]/kal-message-box[1]/div[1]"))).getText();
 		    if (nameStatus.contains("Success")) {
-		        System.out.println("Success: " + nameStatus);
+		    	
+		    	
+		        System.out.println("Automation Successful: " + nameStatus);
 		    } else {
-		        System.out.println("Failed:" + nameStatus);
+		        System.out.println("Automation Failed:" + nameStatus);
 		        
 		    }
 		    
